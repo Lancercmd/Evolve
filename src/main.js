@@ -21,7 +21,6 @@ import { index, mainVue, initTabs, loadTab } from './index.js';
 import { setWeather, seasonDesc, astrologySign, astroVal } from './seasons.js';
 import { getTopChange } from './wiki/change.js';
 import { enableDebug, updateDebugData } from './debug.js';
-import { tryPlayFabAutoLogin} from './playfab.js';
 
 {
     $(document).ready(function() {
@@ -11697,5 +11696,3 @@ popover('versionLog',getTopChange(changeLog),{ wide: true });
 if (global.race['start_cataclysm']){
     start_cataclysm();
 }
-
-tryPlayFabAutoLogin();
